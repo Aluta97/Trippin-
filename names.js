@@ -1,10 +1,17 @@
-module.exports = function(name,regNumber){
+module.exports = function(bus,regNumber){
 
-name.forEach(function(list){
+var array = [];
 
-  if(list.RegistrationNumber === regNumber){
+bus.forEach(function(list){
 
-  }
+if(list.RegistrationNumber === regNumber){
+
+//var esults = list.Routes; 
+
+   array.push(list.Route);
+}
+
 });
-  return list.Route;
+
+    return array;
 };
