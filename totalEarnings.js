@@ -1,16 +1,15 @@
-module.exports = function(users){
+module.exports = function(users) {
+  var map = {};
 
-var array = [];
+  users.forEach(function(user) {
+    var regNo = user.RegistrationNumber;
+       var newEarn = user.Fare * user.Trips;
+    if (map[regNo] === undefined){
+        map[regNo] = 0;
+    }
 
-  var expResults = users.map(function(user){
-
-    results = {
-            RegistrationNumber : user.RegistrationNumber,
-            Earning : user.Fare * user.Trips
-          };
-           array.push(results);
-
+    map[regNo]  +=  newEarn;
   });
 
-    return array;
+    return map;
 }
