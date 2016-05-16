@@ -1,13 +1,9 @@
 module.exports = function(tripList){
-
 var total = 0;
-
 tripList.forEach(function(trips){
   //  console.log(trips);
-
 total = total + trips.Trips
-    // return total;
-
-  });
+    });
+  console.log(total);
   return total;
  };

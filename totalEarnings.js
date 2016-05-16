@@ -7,9 +7,8 @@ module.exports = function(users) {
     if (map[regNo] === undefined){
         map[regNo] = 0;
     }
-
     map[regNo]  +=  newEarn;
   });
-
+   //console.log(map)
     return map;
 }
