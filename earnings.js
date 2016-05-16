@@ -5,6 +5,6 @@ var total = 0;
         total = total + user.Fare * user.Trips;
       };
   });
-  console.log(total);
+//  console.log(total);
   return total;
 };

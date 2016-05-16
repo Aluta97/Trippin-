@@ -5,5 +5,6 @@ var initial  = 0;
       initial = initial + user.Trips;
 }
   });
+      //console.log(initial);
       return initial;
 };

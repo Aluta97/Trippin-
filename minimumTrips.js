@@ -5,5 +5,6 @@ module.exports = function(minTrips) {
       min = trips.Trips;
     }
   })
+  //console.log(min);
   return min;
 };

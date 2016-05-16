@@ -4,6 +4,6 @@ tripList.forEach(function(trips){
   //  console.log(trips);
 total = total + trips.Trips
     });
-  console.log(total);
+//  console.log(total);
   return total;
  };
